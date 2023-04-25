@@ -9,7 +9,7 @@ const IndexPage = () => (
   >
     <Image
       src="/images/xera.svg"
-      alt="Themeptation "
+      alt="Kreativat "
       className="absolute h-96 -top-20 -right-16 lg:right-5 lg:top-10 animate-blob"
     />
     <Image

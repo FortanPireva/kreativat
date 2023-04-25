@@ -18,7 +18,7 @@ const Layout = ({
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" content={description} />
-      <meta property="og:title" content={`${title} | Themeptation`} />
+      <meta property="og:title" content={`${title}`} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content="https://kreativat.com" />
       <meta property="og:type" content="website" />
