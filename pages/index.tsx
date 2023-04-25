@@ -1,15 +1,18 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import TextAnimtation from "./components/TextAnimtation";
-
+import Image from "next/image";
 const IndexPage = () => (
-  <Layout title="Coming Soon - Clean Coming Soon Page (Tailwind CSS, NextJs & HTML5) created by themeptation.net">
-    <img
+  <Layout
+    title="Kreativat - veprat krijuese të të rinjëve kosovar"
+    description="Kreativat - platformë për shpalosjen e talentit kosovar, në fushat e teknologjisë, ndërmarrësisë, inovacionit."
+  >
+    <Image
       src="/images/xera.svg"
       alt="Themeptation "
       className="absolute h-96 -top-20 -right-16 lg:right-5 lg:top-10 animate-blob"
     />
-    <img
+    <Image
       src="/images/shapes.svg"
       alt="hero"
       className="absolute w-full left-24 bottom-24 animate-blob2"
