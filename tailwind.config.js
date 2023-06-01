@@ -4,8 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundImage: {
-      hero:
-        "url('https://html.creativegigstf.com/vCamp/vCamp/images/assets/bg_01.png')",
+      hero: "url('/images/hero_banner.png')",
     },
     extend: {
       animation: {
