@@ -11,6 +11,10 @@ module.exports = {
         blob: "blob 7s infinite",
         blob2: "blob2 10s infinite",
       },
+      fontFamily: {
+        "bebas-neue": ["Bebas Neue", "sans-serif"],
+        "unica-one": ["Unica One", "cursive"],
+      },
       keyframes: {
         blob: {
           "0%": {

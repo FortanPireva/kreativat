@@ -12,7 +12,7 @@ const Layout = ({
   title = "This is the default title",
   description,
 }: Props) => (
-  <div className="relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover">
+  <div className="relative min-h-screen font-bebas-neue flex flex-col justify-center items-center bg-hero bg-cover">
     <Head>
       <title>{title} | Themeptation</title>
       <meta charSet="utf-8" />
