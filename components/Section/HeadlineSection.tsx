@@ -16,7 +16,7 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
   rightCards,
 }) => {
   return (
-    <div className="grid grid-cols-5 grid-rows-1 gap-10 mb-4 mt-48  lg:mt-36 px-6 lg:px-12 justify-center    ">
+    <div className="grid grid-cols-5 grid-rows-1 gap-10 mb-4  mt-36 px:6 px-12 justify-center    ">
       <div className="  flex w-full flex-col  col-span-5 lg:col-span-3 h-full">
         <Image
           width={400}

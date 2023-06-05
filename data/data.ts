@@ -24,26 +24,26 @@ export const TRENDY_SECTION = [
     title: "Studenti shqiptar nga stanford bën inovacion në fushën e kimisë",
     content:
       "To help with that mission, the startup has picked up a $2 million Series A round led by San Francisco and Prague-based Rockaway Capital. The EV giant is under pressure to launch new products, but a huge dump of confidential files in Germany details a litany of technical failings.",
-    image: "/images/prizreni-hap-dyert.png",
+    image: "/images/studenti_shqiptar.png",
   },
   {
     title: "rifat ahmeti - inovator i dronit më të shpejtë dhe më të lehtë",
     content:
       "To help with that mission, the startup has picked up a $2 million Series A round led by San Francisco and Prague-based Rockaway Capital.",
-    image: "/images/shqiptaret-prodhojne.png",
+    image: "/images/rifat-ahmeti.png",
   },
   {
     title:
       "AGENT 327” i punuar nga kosovarët pritet të lansohet gjatë qershorit",
     content:
       "To help with that mission, the startup has picked up a $2 million Series A round led by San Francisco and Prague-based Rockaway Capital. The EV giant is under pressure to launch new products, but a huge dump of confidential files in Germany details a litany of technical failings.",
-    image: "/images/demis-hassabis.png",
+    image: "/images/agent-32.png",
   },
 
   {
     title: "formon drejt tregut ndërkombëtar",
     content:
       "To help with that mission, the startup has picked up a $2 million Series A round led by San Francisco and Prague-based Rockaway Capital. The EV giant is under pressure to launch new products, but a huge dump of confidential files in Germany details a litany of technical failings.",
-    image: "/images/demis-hassabis.png",
+    image: "/images/formon.png",
   },
 ];
