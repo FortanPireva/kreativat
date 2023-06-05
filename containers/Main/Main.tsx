@@ -4,7 +4,7 @@ import { HEADLINE_SECTION } from "../../data/data";
 
 const Main = () => {
   return (
-    <div className="main  mt-32 mx-16 w-full">
+    <div className="main mb-8 w-full">
       <HeadlineSection
         leftCard={HEADLINE_SECTION[0]}
         rightCards={[...HEADLINE_SECTION.filter((item, i) => i > 0)]}

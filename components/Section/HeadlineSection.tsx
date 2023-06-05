@@ -16,10 +16,10 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
   rightCards,
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-1 mb-4  w-full     ">
-      <div className=" p-4 flex w-full flex-col gap-3 col-span-2 lg:col-span-1 h-full">
+    <div className="grid grid-cols-5 grid-rows-1 gap-10 mb-4 mt-48  lg:mt-36 px-6 lg:px-12 justify-center    ">
+      <div className="  flex w-full flex-col  col-span-5 lg:col-span-3 h-full">
         <Image
-          width={300}
+          width={400}
           height={400}
           src={leftCard.image}
           alt={leftCard.title}
@@ -27,17 +27,17 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
         <h2 className="text-lg font-bold mb-2">{leftCard.title}</h2>
         <p>{leftCard.content}</p>
       </div>
-      <div className="grid grid-rows-2 gap-4 lg:col-span-1   ">
+      <div className=" col-span-5 lg:col-span-2 flex flex-col   justify-center items-center  ">
         {rightCards.map((card, index) => (
-          <div key={index} className=" max-w-xl  h-full relative p-5 mb-4">
+          <div key={index} className="flex flex-col gap-2 ">
             <div
               style={{ width: "100%", height: "100%", position: "relative" }}
             >
               <Image
                 alt={card.title}
                 src={card.image}
-                layout="fill"
-                objectFit="cover"
+                width={600}
+                height={300}
               />
             </div>
             <h2 className="text-lg font-bold ">{card.title}</h2>

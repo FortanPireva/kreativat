@@ -9,7 +9,7 @@ interface HeroBannerProps {
 const Hero = () => {
   return (
     <>
-      <div className="uppercase   text-white flex justify-center flex-col  items-center  w-full   h-full ">
+      <div className="uppercase   text-white flex justify-center  flex-col  items-center  w-full   h-full ">
         <div className="flex flex-col justify-center text-center items-center mt-36   max-w-2xl h-full">
           <h1 className="text-5xl md:text-7xl font-bold ">
             BashkoHu me Kreativat
@@ -19,7 +19,7 @@ const Hero = () => {
             SHQIPTARË NGA KOSOVA
           </p>
         </div>
-        <div className="md:mt-20 	relative   translate-y-1/2 mx-6 md:mx-14">
+        <div className="md:mt-20 	relative translate-y-1/3  lg:translate-y-1/2 mx-6 md:mx-14">
           <StatsComponent stats={stats} />
         </div>
       </div>
