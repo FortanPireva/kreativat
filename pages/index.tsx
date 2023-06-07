@@ -68,7 +68,7 @@ const IndexPage = () => {
         </div>
         <div className="relative z-10 mx-4 lg:max-w-xl lg:mx-auto">
           <form
-            className=" flex justify-center items-center max-w-xl gap-0   "
+            className=" flex justify-center items-center max-w-xl gap-0 lowercase  "
             onSubmit={formik.handleSubmit}
           >
             <input

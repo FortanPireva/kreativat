@@ -47,3 +47,61 @@ export const TRENDY_SECTION = [
     image: "/images/formon.png",
   },
 ];
+
+export const RECENT_SECTION = [
+  {
+    title: "“teknofest” sivjet vjen me plot befasira nga kreativat e kosovës",
+    content:
+      "Teknofest, short for Teknofest Aerospace and Technology Festival, is the largest aviation, aerospace, and technology festival of Türkiye.",
+    image: "/images/tekno.png",
+    category: "TECH",
+  },
+  {
+    title: "Startupi shqiptar merr fond prej €160M për ndryshime klimatike",
+    content:
+      "These days climate investing is hot, but the days of just raising a fund and calling it “climate focused” are well and truly over.",
+    image: "/images/rifat-ahmeti.png",
+    category: "SCIENCE",
+  },
+  {
+    title: "filmi i shkurtër i animuar “sprite fright” drejt finalizimit",
+    content:
+      "To help with that mission, the startup has picked up a $2 million Series A.",
+    image: "/images/agent-32.png",
+    category: "entertainment",
+  },
+
+  {
+    title: "aplikacioni  që ndihmon në gjenerimin e shpejtë të pikturave",
+    content:
+      "As of Monday, the top three spots on the U.S. App Store are all held by AI photo editors, and even more AI art apps are newly ranking in the Top 100.",
+    image: "/images/formon.png",
+    category: "art",
+  },
+];
+
+export const PRODUCT_LAUNCHES = [
+  {
+    title:
+      "Appsflyer lanson aplikacion për shitje të patundshmërisë në urgjencë",
+    content:
+      "To help with that mission, the startup has picked up a $2 million Series A.",
+    image: "/images/appsflyer.png",
+    category: "TECH",
+  },
+  {
+    title: "Gjirafa tech lanson “vp player”",
+    content:
+      "To help with that mission, the startup has picked up a $2 million Series A.",
+    image: "/images/rifat-ahmeti.png",
+    category: "SCIENCE",
+  },
+  {
+    title:
+      "kosovari lanson aplikacion konkurrent të airbnb-së në shtete skandinave",
+    content:
+      "To help with that mission, the startup has picked up a $2 million Series A.",
+    image: "/images/agent-32.png",
+    category: "entertainment",
+  },
+];

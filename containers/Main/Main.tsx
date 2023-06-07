@@ -1,7 +1,15 @@
 import React from "react";
+import Goal from "../../components/Section/GoalSection";
 import HeadlineSection from "../../components/Section/HeadlineSection";
+import ProductLaunch from "../../components/Section/ProductLaunch";
+import RecentSection from "../../components/Section/RecentSection";
 import TrendySection from "../../components/Section/TrendySection";
-import { HEADLINE_SECTION, TRENDY_SECTION } from "../../data/data";
+import {
+  HEADLINE_SECTION,
+  PRODUCT_LAUNCHES,
+  RECENT_SECTION,
+  TRENDY_SECTION,
+} from "../../data/data";
 
 const Main = () => {
   return (
@@ -11,6 +19,9 @@ const Main = () => {
         rightCards={[...HEADLINE_SECTION.filter((item, i) => i > 0)]}
       />
       <TrendySection cards={TRENDY_SECTION} />
+      <RecentSection cards={RECENT_SECTION} />
+      <ProductLaunch cards={PRODUCT_LAUNCHES} />
+      <Goal />
     </div>
   );
 };
