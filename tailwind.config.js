@@ -13,7 +13,12 @@ module.exports = {
       },
       fontFamily: {
         "bebas-neue": ["Bebas Neue", "sans-serif"],
-        "unica-one": ["Unica One", "cursive"],
+        "unica-one": ["Unica One", "normal"],
+      },
+      colors: {
+        "kreativat-dark-blue": "#121A1F",
+        "kreativat-dark-button": "#1E2B34",
+        "kreativat-faint-white": "rgba(0,0,0,0.7)",
       },
       keyframes: {
         blob: {
