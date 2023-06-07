@@ -48,7 +48,7 @@ const IndexPage = () => {
 
   return (
     <Layout
-      title="Kreativat - veprat krijuese të të rinjëve kosovar"
+      title="Kreativat -  veprat krijuese të të rinjëve kosovar"
       description="Kreativat - platformë për shpalosjen e talentit kosovar, në fushat e teknologjisë, ndërmarrësisë, inovacionit."
     >
       <div className="bg-hero text-white bg-no-repeat w-full bg-cover  min-h-screen h-screen  relative z-10 py-6 space-y-16 lg:space-y-24">
