@@ -4,6 +4,7 @@ import HeadlineSection from "../../components/Section/HeadlineSection";
 import ProductLaunch from "../../components/Section/ProductLaunch";
 import RecentSection from "../../components/Section/RecentSection";
 import TrendySection from "../../components/Section/TrendySection";
+import WorkWithUs from "../../components/WorkWithUs/WorkWithUs";
 import {
   HEADLINE_SECTION,
   PRODUCT_LAUNCHES,
@@ -22,6 +23,7 @@ const Main = () => {
       <RecentSection cards={RECENT_SECTION} />
       <ProductLaunch cards={PRODUCT_LAUNCHES} />
       <Goal />
+      <WorkWithUs />
     </div>
   );
 };
