@@ -189,3 +189,15 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const faqs = [
+  {
+    question: "What is your return policy?",
+    answer: "You can return any item within 30 days of purchase.",
+  },
+  {
+    question: "Do you offer international shipping?",
+    answer: "Yes, we ship to most countries worldwide.",
+  },
+  // Add more FAQs as needed
+];

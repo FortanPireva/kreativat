@@ -1,4 +1,5 @@
 import React from "react";
+import FAQSection from "../../components/Section/FAQSection";
 import Goal from "../../components/Section/GoalSection";
 import HeadlineSection from "../../components/Section/HeadlineSection";
 import ProductLaunch from "../../components/Section/ProductLaunch";
@@ -6,6 +7,7 @@ import RecentSection from "../../components/Section/RecentSection";
 import TrendySection from "../../components/Section/TrendySection";
 import WorkWithUs from "../../components/WorkWithUs/WorkWithUs";
 import {
+  faqs,
   HEADLINE_SECTION,
   PRODUCT_LAUNCHES,
   RECENT_SECTION,
@@ -24,6 +26,7 @@ const Main = () => {
       <ProductLaunch cards={PRODUCT_LAUNCHES} />
       <Goal />
       <WorkWithUs />
+      <FAQSection faqs={faqs} />
     </div>
   );
 };
