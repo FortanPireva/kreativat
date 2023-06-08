@@ -105,3 +105,87 @@ export const PRODUCT_LAUNCHES = [
     category: "entertainment",
   },
 ];
+export const links = [
+  { name: "About", url: "/about" },
+  { name: "Services", url: "/services" },
+  { name: "Contact", url: "/contact" },
+  // Add more links as needed
+];
+
+export const socialMediaLinks = [
+  { name: "Facebook", url: "https://www.facebook.com" },
+  { name: "Twitter", url: "https://www.twitter.com" },
+  { name: "LinkedIn", url: "https://www.linkedin.com" },
+  // Add more social media links as needed
+];
+
+export const footerLinks = [
+  {
+    title: "Me te rejat",
+    links: [
+      {
+        name: "Lajmet",
+        url: "/lajmet",
+      },
+      {
+        name: "Arsimi",
+        url: "/arsimi",
+      },
+      {
+        name: "Shkenca",
+        url: "/shkenca",
+      },
+      {
+        name: "Teknologjia",
+        url: "/teknologjia",
+      },
+    ],
+  },
+  {
+    title: "Komuniteti",
+    links: [
+      {
+        name: "Inovatoret",
+        url: "/invovatoret",
+      },
+      {
+        name: "Blog",
+        url: "/blog",
+      },
+    ],
+  },
+  {
+    title: "Projektet",
+    links: [
+      {
+        name: "Statups",
+        url: "/startups",
+      },
+      {
+        name: "Teknologjia",
+        url: "/teknolgjia",
+      },
+      {
+        name: "Angazhime",
+        url: "/angazhime",
+      },
+    ],
+  },
+  {
+    title: "Kerko Pune",
+    links: [
+      {
+        name: "Te reja",
+        url: "/pune/tereja",
+      },
+      {
+        name: "Praktika",
+        url: "/praktika",
+      },
+      {
+        name: "Me kontrate",
+        url: "/kontrate ",
+      },
+    ],
+  },
+];

@@ -14,7 +14,7 @@ import {
 
 const Main = () => {
   return (
-    <div className="main mb-8 w-full">
+    <div className="main  w-full">
       <HeadlineSection
         leftCard={HEADLINE_SECTION[0]}
         rightCards={[...HEADLINE_SECTION.filter((item, i) => i > 0)]}
