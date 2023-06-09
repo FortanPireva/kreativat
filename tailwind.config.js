@@ -1,6 +1,10 @@
 module.exports = {
   mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundImage: {
@@ -12,13 +16,14 @@ module.exports = {
         blob2: "blob2 10s infinite",
       },
       fontFamily: {
-        "bebas-neue": ["Bebas Neue", "sans-serif"],
-        "unica-one": ["Unica One", "normal"],
+        "bebas-neue": ["var(--font-bebas-neue)"],
+        "unica-one": ["var(--font-unica-one)"],
       },
       colors: {
         "kreativat-dark-blue": "#121A1F",
         "kreativat-dark-button": "#1E2B34",
-        "kreativat-faint-white": "rgba(0,0,0,0.7)",
+        "kreativat-faint-white": "rgba(255,255,255,0.7)",
+        "kreativat-input-placeholder": "#A6A6A6",
       },
       keyframes: {
         blob: {

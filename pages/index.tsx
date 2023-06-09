@@ -51,24 +51,22 @@ const IndexPage = () => {
       title="Kreativat -  veprat krijuese të të rinjëve kosovar"
       description="Kreativat - platformë për shpalosjen e talentit kosovar, në fushat e teknologjisë, ndërmarrësisë, inovacionit."
     >
-      <div className="bg-hero text-white bg-no-repeat w-full bg-cover  min-h-screen h-screen  relative z-10 py-6 space-y-16 lg:space-y-24">
-        <div className="text-center space-y-3 pt-40">
+      <div className="bg-black text-white font-bebas-neue bg-no-repeat w-full  mx:auto bg-cover  min-h-screen h-screen  relative z-10 py-6 space-y-16 lg:space-y-24">
+        <div className="text-center w-full mr-0 pt-28 flex justify-center items-center flex-col">
           {/* <TextAnimtation /> */}
           {/* <h1 className="text-7xl lg:text-9xl font-extrabold">We’r blowing up</h1> */}
-          <p className="text-lg font-unica-one lg:text-lg tracking-wide mx-10 lg:max-w-3xl lg:mx-auto uppercase">
+          <p className="text-xl text-kreativat-faint-white font-unica-one lg:text-lg tracking-wide mx-10 lg:max-w-3xl lg:mx-auto uppercase">
             Së shpejti...
           </p>
-          <h1 className="text-7xl md:text-8xl lg:text-9xl uppercase">
-            KREATIVAT
-          </h1>
-          <p className="text-lg   font-unica-one lg:text-lg text-gray-300 tracking-wide mx-10 lg:max-w-xl lg:mx-auto uppercase">
+          <h1 className="text-8xl lg:text-9xl uppercase">KREATIVAT.</h1>
+          <p className="text-xl md:text-2xl max-w-xl font-unica-one  text-kreativat-faint-white tracking-wide mx-10 lg:max-w-md lg:mx-auto uppercase">
             Platformë për promovimin e kreativitetit e inovacionit të të rinjve
             shqiptarë.
           </p>
         </div>
-        <div className="relative z-10 mx-4 lg:max-w-xl lg:mx-auto">
+        <div className="relative z-10 mx-3 flex justify-center items-center">
           <form
-            className=" flex justify-center items-center max-w-xl gap-0 lowercase  "
+            className=" flex-1  max-w-xl gap-0 lowercase  relative  mx-4"
             onSubmit={formik.handleSubmit}
           >
             <input
@@ -78,14 +76,14 @@ const IndexPage = () => {
               onChange={formik.handleChange}
               value={formik.values.email}
               placeholder="E-maili juaj"
-              className={` w-full bg-kreativat-dark-blue text-2xl h-20 font-light text-white placeholder-gray-500 py-5 pl-5 pr-32 lg:pr-52 rounded-sm
+              className={` w-full flex-1  bg-white text-2xl font-unica-one   text-kreativat-input-placeholder placeholder-kreativat-input-placeholder py-5 pl-5 pr-32 md:pr-42 rounded-sm
                 ${Boolean(formik.errors.email) ? "border-red-500 border-2" : ""}
               `}
             />
 
             <button
               type="submit"
-              className="absolute uppercase right-3  w-28 py-4 text:lg  md:w-40  justify-center flex items-center  md:px-5 md:py-4  md:text-xl font-semibold bg-kreativat-dark-button text-white  transition ease-in-out duration-500 hover:scale-105"
+              className="absolute uppercase right-1  top-2  w-28 py-4 font-unica-one    md:w-40    md:px-5 md:py-4 text-xl font-semibold bg-kreativat-dark-button text-white  transition ease-in-out duration-500 hover:scale-105"
             >
               {isSendingMail ? (
                 <div>
