@@ -16,9 +16,9 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
   };
 
   return (
-    <nav className="text-white w-full ">
+    <nav className="text-white w-full max-w-8xl mx-auto pl-4 md:pl-10  ">
       <div className="flex items-center justify-between mt-6  ">
-        <h1 className="font-bold text-xl ml-2 md:ml-10 md:text-2xl">
+        <h1 className="font-bold text-2xl lg:text-3xl  md:ml-10 md:text-2xl">
           Kreativat
         </h1>
         <div className="md:hidden absolute right-4 z-20">
@@ -51,7 +51,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
             isOpen ? "block" : "hidden"
           } absolute  text-white w-full md:relative  md:flex md:items-center md:w-auto top-0 z-10 bg-gray-800 md:bg-transparent md:justify-between md:flex-1  pt-10  md:pt-0 md:mx-3    h-full`}
         >
-          <ul className="pt-2 md:flex  md:gap-2 lg:gap-3 md:ml-10 lg:ml-24  md:items-center md:justify-between md:space-x-4 p-3 md:p-0">
+          <ul className="pt-2 text-xl md:flex  md:gap-2 lg:gap-3 md:ml-10 lg:ml-24  md:items-center md:justify-between md:space-x-4 p-3 md:p-0">
             {links.map((link, index) => (
               <li key={index} className="md:m-0 mt-2 mb-2">
                 <a
@@ -63,7 +63,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
               </li>
             ))}
           </ul>
-          <div className="flex  justify-around md:justify-between gap-10 mx-5 mt-3 md:mt-0">
+          <div className="flex  text-xl justify-around md:justify-between gap-10 mx-5 mt-3 md:mt-0">
             <button className="border-none bg-none text-white">Kyqu</button>
             <button className="p-3 text-black bg-white"> Regjistrohu</button>
           </div>

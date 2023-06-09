@@ -64,9 +64,9 @@ const IndexPage = () => {
             shqiptarë.
           </p>
         </div>
-        <div className="relative z-10 mx-3 flex justify-center items-center">
+        <div className="relative z-10 mx-3 flex flex-col justify-center items-center">
           <form
-            className=" flex-1  max-w-xl gap-0 lowercase  relative  mx-4"
+            className=" flex-1 gap-0 lowercase  w-full max-w-xl relative  mx-4"
             onSubmit={formik.handleSubmit}
           >
             <input
@@ -76,8 +76,12 @@ const IndexPage = () => {
               onChange={formik.handleChange}
               value={formik.values.email}
               placeholder="E-maili juaj"
-              className={` w-full flex-1  bg-white text-2xl font-unica-one   text-kreativat-input-placeholder placeholder-kreativat-input-placeholder py-5 pl-5 pr-32 md:pr-42 rounded-sm
-                ${Boolean(formik.errors.email) ? "border-red-500 border-2" : ""}
+              className={` w-full flex-1  bg-white text-2xl outline-none  lowercase text-kreativat-input-placeholder placeholder-kreativat-input-placeholder py-5 pl-5 pr-32 md:pr-42 rounded-sm
+                ${
+                  Boolean(formik.errors.email) && formik.values.email.length > 0
+                    ? "border-red-500 border-2"
+                    : ""
+                }
               `}
             />
 
@@ -100,7 +104,7 @@ const IndexPage = () => {
             </button>
           </form>
 
-          {Boolean(formik.errors.email) && (
+          {Boolean(formik.errors.email) && formik.values.email.length > 0 && (
             <p className="text-red-500 text-center mt-3">
               {formik.errors.email}
             </p>

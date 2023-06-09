@@ -21,13 +21,13 @@ const RecentSection = ({ cards }: RecentSectionProps) => {
       <div className=" grid grid-cols-12 grid-rows-1 gap-6   ">
         <div className="col-span-12 md:col-span-8 flex flex-col gap-4">
           {cards.map((card, i) => (
-            <div key={i} className="grid grid-cols-12 grid-rows-1 gap-6 ">
-              <div className="col-span-12 md:col-span-6">
+            <div key={i} className="grid grid-cols-12 grid-rows-1 gap-6  ">
+              <div className="col-span-12 md:col-span-6 relative ">
                 <Image
                   alt={card.title}
                   src={card.image}
-                  width={600}
-                  height={300}
+                  fill
+                  style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="col-span-12 md:col-span-6 flex flex-col justify-center items-start gap-3">

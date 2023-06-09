@@ -36,8 +36,8 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
               <Image
                 alt={card.title}
                 src={card.image}
-                width={600}
-                height={300}
+                fill
+                style={{ objectFit: "cover" }}
               />
             </div>
             <h2 className="text-lg font-bold ">{card.title}</h2>
