@@ -76,7 +76,7 @@ const IndexPage = () => {
               onChange={formik.handleChange}
               value={formik.values.email}
               placeholder="E-maili juaj"
-              className={` w-full flex-1  bg-white text-2xl outline-none  lowercase text-kreativat-input-placeholder placeholder-kreativat-input-placeholder py-5 pl-5 pr-32 md:pr-42 rounded-sm
+              className={` w-full flex-1  bg-white text-2xl outline-none  lowercase font-unica-one text-black placeholder-kreativat-input-placeholder py-6 pl-5 pr-32 md:pr-42 rounded-sm
                 ${
                   Boolean(formik.errors.email) && formik.values.email.length > 0
                     ? "border-red-500 border-2"
@@ -87,7 +87,7 @@ const IndexPage = () => {
 
             <button
               type="submit"
-              className="absolute uppercase right-1  top-2  w-28 py-4 font-unica-one    md:w-40    md:px-5 md:py-4 text-xl font-semibold bg-kreativat-dark-button text-white  transition ease-in-out duration-500 hover:scale-105"
+              className="absolute uppercase right-2  top-3  w-28 py-4 font-unica-one    md:w-40    md:px-5 md:py-4 text-xl font-semibold bg-kreativat-input-black text-white  transition ease-in-out duration-500 hover:scale-105"
             >
               {isSendingMail ? (
                 <div>
@@ -105,12 +105,12 @@ const IndexPage = () => {
           </form>
 
           {Boolean(formik.errors.email) && formik.values.email.length > 0 && (
-            <p className="text-red-500 text-center mt-3">
+            <p className="text-red-500 mt-3 font-unica-one text-lg pl-2">
               {formik.errors.email}
             </p>
           )}
           {errorMsg && (
-            <p className="text-red-500 text-center mt-3">
+            <p className="text-red-500 text-center mt-3 font-unica-one text-lg pl-2 ">
               Oops... ka ndodhur një gabim.
             </p>
           )}

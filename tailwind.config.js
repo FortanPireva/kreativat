@@ -24,6 +24,7 @@ module.exports = {
         "kreativat-dark-button": "#1E2B34",
         "kreativat-faint-white": "rgba(255,255,255,0.7)",
         "kreativat-input-placeholder": "#A6A6A6",
+        "kreativat-input-black": "#0C0C0C",
       },
       keyframes: {
         blob: {
