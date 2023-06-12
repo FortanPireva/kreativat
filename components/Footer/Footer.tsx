@@ -33,11 +33,11 @@ const Footer: React.FC<FooterProps> = ({
   externalLinks,
 }) => {
   return (
-    <footer className="w-full bg-black p-6 text-white  pt-32 justify-between gap-32 flex flex-col ">
-      <div className="container mx-auto grid grid-cols-12 justify-center items-center gap-20">
-        <div className="flex flex-col justify-around items-center w-full  max-w-lg gap-4 col-span-12 xl:col-span-6 text-center">
+    <footer className="w-full bg-black  overflow-hidden  text-white  pt-32 justify-center items-center flex flex-col ">
+      <div className="container mx-auto grid grid-cols-12  max-w-md  gap-20">
+        <div className="flex flex-col justify-around items-center w-full  max-w-md gap-4 col-span-12 xl:col-span-6 text-center">
           <h1 className="text-4xl font-bold mb-8">KREATIVAT</h1>
-          <p className="max-w-md">
+          <p className="max-w-sm text-center">
             Platformë për promovimin e punëve kreative e inovative të të rinjve
             shqiptarë nga Kosova.
           </p>
@@ -50,7 +50,7 @@ const Footer: React.FC<FooterProps> = ({
             return (
               <ul
                 key={eLink.title}
-                className="col-span-12 md:col-span-6 lg:col-span-3 flex flex-col justify-start items-center max-w-md"
+                className="col-span-6 md:col-span-6 lg:col-span-3 flex flex-col justify-start items-center max-w-md"
               >
                 <li className="first text-xl font-bold mb-6">{eLink.title}</li>
                 {eLink.links.map((link) => {

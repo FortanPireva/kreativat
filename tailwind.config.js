@@ -29,6 +29,7 @@ module.exports = {
         "kreativat-faint-white": "rgba(255,255,255,0.7)",
         "kreativat-input-placeholder": "#A6A6A6",
         "kreativat-input-black": "#0C0C0C",
+        "kreativat-bar-background": "#F7F7F7",
       },
       keyframes: {
         blob: {
