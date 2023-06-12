@@ -16,7 +16,7 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
   rightCards,
 }) => {
   return (
-    <div className="grid grid-cols-5 grid-rows-1 gap-10 mb-4  mt-36 px:6 px-12 justify-center    ">
+    <div className="grid grid-cols-5 grid-rows-1 gap-10 mb-4  mt-96 md:mt-36  px-4 justify-center    ">
       <div className="  flex w-full flex-col  col-span-5 lg:col-span-3 h-full">
         <Image
           width={400}
@@ -24,7 +24,9 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
           src={leftCard.image}
           alt={leftCard.title}
         />
-        <h2 className="text-lg font-bold mb-2">{leftCard.title}</h2>
+        <h2 className=" font-bold  text-kreativat-card-title leading-kreativat-tight mt-4  mb-2">
+          {leftCard.title}
+        </h2>
         <p>{leftCard.content}</p>
       </div>
       <div className=" col-span-5 lg:col-span-2 flex flex-col   justify-center items-center  ">
@@ -40,7 +42,9 @@ const HeadlineSection: React.FC<SectionComponentProps> = ({
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <h2 className="text-lg font-bold ">{card.title}</h2>
+            <h2 className="text-kreativat-card-title mt-4 leading-tight font-bebas-neue font-bold ">
+              {card.title}
+            </h2>
             <p className="text-base"> {card.content}</p>
           </div>
         ))}

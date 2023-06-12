@@ -19,9 +19,9 @@ const StatsComponent: React.FC<StatsComponentProps> = ({ stats }) => {
       {stats.map((stat, index) => (
         <div
           key={index}
-          className=" flex flex-col  items-center gap-2 pt-2  md:pt-10 justify-start "
+          className=" flex flex-col font-bebas-neue items-center gap-2 pt-2  md:pt-10 justify-start "
         >
-          <h2 className="text-2xl lg:text-4xl font-bold ">
+          <h2 className="text-5xl lg:text-4xl font-bold  leading-kreativat-tight">
             <DynamicCountUphNoSSR
               start={0}
               end={stat.number}
@@ -30,7 +30,7 @@ const StatsComponent: React.FC<StatsComponentProps> = ({ stats }) => {
             />
             {/* {stat.number} */}
           </h2>
-          <p className="text-base  lg:text-lg font-unica-one text-center">
+          <p className="text-2xl leading-kreativat-tight  lg:text-lg font-unica-one text-center">
             {stat.value}
           </p>
         </div>

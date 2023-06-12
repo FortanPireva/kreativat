@@ -2,7 +2,7 @@ const stats = [
   {
     number: 6,
     value: "GDP Contribution",
-    symbool: "%",
+    symbol: "%",
   },
   {
     number: 45,

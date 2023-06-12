@@ -60,6 +60,12 @@ module.exports = {
           },
         },
       },
+      fontSize: {
+        "kreativat-card-title": "32px",
+      },
+      lineHeight: {
+        "kreativat-tight": "1.2",
+      },
     },
   },
   variants: {},
