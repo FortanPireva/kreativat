@@ -18,6 +18,10 @@ module.exports = {
       fontFamily: {
         "bebas-neue": ["var(--font-bebas-neue)"],
         "unica-one": ["var(--font-unica-one)"],
+        airbnb: ["var(--font-airbnb)"],
+      },
+      boxShadow: {
+        "kreativat-button": "4px 4px 0px #676767",
       },
       colors: {
         "kreativat-dark-blue": "#121A1F",

@@ -10,10 +10,12 @@ interface ProductLaunchProps {
 }
 const ProductLaunch = ({ cards }: ProductLaunchProps) => {
   return (
-    <div className="bg-[#F7F7F7] flex flex-col justify-around py-12 px-12 md:px-24 items-center mx-auto min-h-screen ">
-      <div className="flex flex-col gap-4 text-center">
-        <h1 className="uppercase text-4xl font-bold">NEW PRODUCT LAUNCHES</h1>
-        <p className="text-lg">
+    <div className="bg-[#F7F7F7] flex flex-col justify-around py-12 px-6 md:px-24 items-center mx-auto min-h-screen ">
+      <div className="flex flex-col gap-2 text-center pt-8 mb-16">
+        <h1 className="uppercase font-bebas-neue  text-[40px] leading-kreativat-tight font-bold">
+          NEW PRODUCT LAUNCHES
+        </h1>
+        <p className="text-lg font-unica-one">
           Follow the latest product launches to get updated
         </p>
       </div>
@@ -24,16 +26,18 @@ const ProductLaunch = ({ cards }: ProductLaunchProps) => {
             key={i}
             className="col-span-12 md:col-span-6 lg:col-span-4  flex flex-col"
           >
-            <div>
+            <div className="relative  	 w-auto max-h-screen  h-60 basis-full  ">
               <Image
                 alt={card.title}
                 src={card.image}
-                width={600}
-                height={300}
-              />{" "}
-              <h2 className="text-lg font-bold ">{card.title}</h2>
-              <p className="text-base"> {card.content}</p>
+                fill
+                style={{ objectFit: "cover" }}
+              />
             </div>
+            <h2 className=" font-bold  text-2xl leading-kreativat-tight mt-4  mb-2 ">
+              {card.title}
+            </h2>
+            <p className="font-airbnb text-sm"> {card.content}</p>
           </div>
         ))}
       </div>

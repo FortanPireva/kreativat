@@ -11,9 +11,9 @@ interface RecentSectionProps {
 }
 const RecentSection = ({ cards }: RecentSectionProps) => {
   return (
-    <div className="my-20 px:6 px-12">
+    <div className="my-20 px-4 ">
       <div className="border-t-4 border-t-black my-8 p-0">
-        <span className="bg-black text-white m-0 p-1 uppercase">
+        <span className="bg-black  text-white text-lg leading-kreativat-tight m-0 p-1 uppercase">
           {" "}
           Më të rejat
         </span>
@@ -22,7 +22,7 @@ const RecentSection = ({ cards }: RecentSectionProps) => {
         <div className="col-span-12 md:col-span-8 flex flex-col gap-4">
           {cards.map((card, i) => (
             <div key={i} className="grid grid-cols-12 grid-rows-1 gap-6  ">
-              <div className="col-span-12 md:col-span-6 relative ">
+              <div className="relative  col-span-12 	 w-auto max-h-screen  h-60 basis-full  ">
                 <Image
                   alt={card.title}
                   src={card.image}
@@ -30,10 +30,14 @@ const RecentSection = ({ cards }: RecentSectionProps) => {
                   style={{ objectFit: "cover" }}
                 />
               </div>
-              <div className="col-span-12 md:col-span-6 flex flex-col justify-center items-start gap-3">
-                <span className="bg-gray-100 uppercase">{card.category}</span>
-                <h2 className="text-lg font-bold ">{card.title}</h2>
-                <p className="text-base"> {card.content}</p>
+              <div className="col-span-12 md:col-span-6 flex flex-col justify-center items-start gap-0">
+                <span className="bg-none text-black  font-unica-one uppercase mb-3">
+                  {card.category}
+                </span>
+                <h2 className="font-bold  text-kreativat-card-title leading-kreativat-tight mt-0 ">
+                  {card.title}
+                </h2>
+                <p className="font-airbnb text-sm mt-3"> {card.content}</p>
               </div>
             </div>
           ))}
