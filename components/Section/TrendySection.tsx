@@ -18,26 +18,24 @@ const TrendySection = ({ cards }: TrendySectionProps) => {
           TRENDY
         </span>
       </div>
-      <div className=" grid grid-cols-12 grid-rows-1 gap-6   ">
+      <div className=" grid grid-cols-12 grid-rows-1 gap-4  ">
         {cards.map((card, i) => (
           <div
             key={i}
-            className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 flex flex-col"
+            className="col-span-12 md:col-span-6 lg:col-span-4  flex flex-col"
           >
-            <div>
-              <div className="relative  	 w-auto max-h-screen  h-60 basis-full  ">
-                <Image
-                  alt={card.title}
-                  src={card.image}
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2 className=" font-bold  text-kreativat-card-title leading-kreativat-tight mt-4  mb-2">
-                {card.title}
-              </h2>
-              <p className="font-airbnb text-sm"> {card.content}</p>
+            <div className="relative  	 w-auto max-h-screen  h-60 basis-full  ">
+              <Image
+                alt={card.title}
+                src={card.image}
+                fill
+                style={{ objectFit: "fill" }}
+              />
             </div>
+            <h2 className=" font-bold  text-kreativat-card-title leading-kreativat-tight mt-4  mb-2">
+              {card.title}
+            </h2>
+            <p className="font-airbnb text-sm"> {card.content}</p>
           </div>
         ))}
       </div>
