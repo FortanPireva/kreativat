@@ -11,7 +11,7 @@ interface RecentSectionProps {
 }
 const RecentSection = ({ cards }: RecentSectionProps) => {
   return (
-    <div className="my-20 px-4 ">
+    <div className="my-20 px-4 mx-auto  max-w-7xl ">
       <div className="border-t-4 border-t-black my-8 p-0">
         <span className="bg-black  text-white text-lg leading-kreativat-tight m-0 p-1 uppercase">
           {" "}
@@ -21,8 +21,11 @@ const RecentSection = ({ cards }: RecentSectionProps) => {
       <div className=" grid grid-cols-12 grid-rows-1 gap-6   ">
         <div className="col-span-12 md:col-span-8 flex flex-col gap-4">
           {cards.map((card, i) => (
-            <div key={i} className="grid grid-cols-12 grid-rows-1 gap-6  ">
-              <div className="relative  col-span-12 	 w-auto max-h-screen  h-60 basis-full  ">
+            <div
+              key={i}
+              className="grid grid-cols-12 grid-rows-1 gap-6 h-full  "
+            >
+              <div className="relative  col-span-10 	 w-auto max-h-screen  h-96 basis-full  ">
                 <Image
                   alt={card.title}
                   src={card.image}

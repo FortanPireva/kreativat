@@ -15,7 +15,7 @@ const DynamicCountUphNoSSR = dynamic(() => import("react-countup"), {
 });
 const StatsComponent: React.FC<StatsComponentProps> = ({ stats }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 p-2 lg:grid-cols-4 gap-4   text-black">
+    <div className="grid grid-cols-1 md:grid-cols-2 p-2 lg:grid-cols-4 gap-4   text-black ">
       {stats.map((stat, index) => (
         <div
           key={index}

@@ -21,7 +21,7 @@ const FAQSection: React.FC<FAQProps> = ({ faqs }) => {
   };
 
   return (
-    <div className="w-full p-6 ax-auto flex justify-center text-left items-center flex-col gap-5 py-14 min-h-screen ">
+    <div className="w-full p-6 ax-auto flex justify-center text-left items-center flex-col gap-5 py-14 min-h-screen mx-auto  max-w-7xl">
       <p className="uppercase w-full pt-20 text-left font-unica-one text-2xl leading-kreativat-tight">
         Key Figures
       </p>

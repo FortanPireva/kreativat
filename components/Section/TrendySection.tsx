@@ -11,7 +11,7 @@ interface TrendySectionProps {
 }
 const TrendySection = ({ cards }: TrendySectionProps) => {
   return (
-    <div className="my-20 px-4 ">
+    <div className="my-20 px-4  mx-auto  max-w-7xl ">
       <div className="border-t-4 border-t-black my-8 p-0">
         <span className="bg-black text-white text-lg leading-kreativat-tight m-0 p-1">
           {" "}
