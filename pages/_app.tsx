@@ -1,18 +1,16 @@
 import "../styles/globals.css";
 import React from "react";
 import type { AppProps } from "next/app";
-import { Bebas_Neue } from "@next/font/google";
-import { Unica_One } from "@next/font/google";
 import localFont from "next/font/local";
 import local from "next/font/local";
-const bebas_neue = Bebas_Neue({
-  subsets: ["latin"],
+const bebas_neue = localFont({
+  src: "./fonts/BebasNeue.otf",
   variable: "--font-bebas-neue",
-  weight: "400",
 });
 
-const unica_one = Unica_One({
-  subsets: ["latin"],
+const unica_one = localFont({
+  src: "./fonts/UnicaOne-Regular.ttf",
+
   variable: "--font-unica-one",
   weight: "400",
 });

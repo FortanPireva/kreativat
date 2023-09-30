@@ -56,7 +56,7 @@ const Navigation: React.FC<NavigationProps> = ({ links }) => {
               <li key={index} className="md:m-0 mt-2 mb-2">
                 <a
                   href={link.url}
-                  className="block px-2 py-1 md:p-2 rounded  hover:underline  uppercase"
+                  className="block px-2 py-1 md:p-2 rounded tracking-wide  hover:underline  uppercase"
                 >
                   {link.name}
                 </a>

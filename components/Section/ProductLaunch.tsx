@@ -10,12 +10,12 @@ interface ProductLaunchProps {
 }
 const ProductLaunch = ({ cards }: ProductLaunchProps) => {
   return (
-    <div className="bg-[#F7F7F7] flex flex-col justify-around py-12 px-6 md:px-24 items-center mx-auto min-h-screen ">
+    <div className="bg-[#F7F7F7] flex flex-col justify-around py-36 px-6 md:px-24 items-center mx-auto">
       <div className="flex flex-col gap-2 text-center pt-8 mb-16">
-        <h1 className="uppercase font-bebas-neue  text-[40px] leading-kreativat-tight font-bold">
+        <h1 className="uppercase font-bebas-neue text-6xl   leading-kreativat-tight font-bold">
           NEW PRODUCT LAUNCHES
         </h1>
-        <p className="text-lg font-unica-one">
+        <p className="text-2xl font-unica-one">
           Follow the latest product launches to get updated
         </p>
       </div>
