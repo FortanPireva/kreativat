@@ -12,13 +12,11 @@ const NewDesignPage = () => {
       title="Kreativat - veprat krijuese të të rinjëve kosovar"
       description="Kreativat - platformë për shpalosjen e talentit kosovar, në fushat e teknologjisë, ndërmarrësisë, inovacionit."
     >
-      <div className="bg-hero bg-no-repeat w-full bg-cover  min-h-screen h-screen flex flex-col">
+      <div className="bg-hero bg-no-repeat w-full bg-cover  min-h-screen  h-screen flex flex-col max-w-screen-xl overflow-hidden">
         <Header />
         <Hero />
       </div>
-      <div>
-        <Main />
-      </div>
+      <Main />
       <Footer
         company="Kreativat"
         year={new Date().getFullYear()}

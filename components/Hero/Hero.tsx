@@ -9,7 +9,7 @@ interface HeroBannerProps {
 const Hero = () => {
   return (
     <>
-      <div className="uppercase relative   text-white flex justify-center  flex-col  items-center min-h-full  w-full  md:gap-14    ">
+      <div className="uppercase relative   text-white flex justify-center  z-50 flex-col  items-center min-h-full  w-full  md:gap-14    ">
         <div className="flex flex-col justify-center text-center items-center    max-w-2xl ">
           <h1 className="text-6xl md:text-9xl font-bold max-w-xl  font-bebas-neue">
             BashkoHu <br /> me Kreativat
@@ -18,9 +18,6 @@ const Hero = () => {
             PLATFORMË PËR PROMOVIMIN E PUNËVE KREATIVE E INOVATIVE TË TË RINJVE
             SHQIPTARË NGA KOSOVA
           </p>
-        </div>
-        <div className=" bg-white 	absolute bottom-0 mx-6 md:mx-14">
-          <StatsComponent stats={stats} />
         </div>
       </div>
     </>

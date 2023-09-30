@@ -21,10 +21,13 @@ const FAQSection: React.FC<FAQProps> = ({ faqs }) => {
   };
 
   return (
-    <div className="w-full p-6 ax-auto flex justify-start text-left items-center flex-col gap-5 py-20  md:py-40 min-h-screen mx-auto  max-w-7xl">
+    <div
+      className="   
+flex justify-start text-left items-center flex-col gap-5 py-20 px-4  md:py-40 min-h-screen  max-w-7xl"
+    >
       <div className="flex flex-col md:flex-row justify-between gap-16  md:gap-36 ">
-        <div className=" max-w-md">
-          <p className="uppercase w-full  text-left font-unica-one text-2xl leading-kreativat-tight">
+        <div className=" w-10/12 max-w-xs">
+          <p className="uppercase   text-left font-unica-one text-2xl leading-kreativat-tight">
             Key Figures
           </p>
           <h1 className="font-bebas-neue text-5xl  leading-kreativat-tight text-black">
@@ -40,7 +43,7 @@ const FAQSection: React.FC<FAQProps> = ({ faqs }) => {
           </p>
         </div>
 
-        <div className="stats grid grid-cols-12 flex-1 w-96  ">
+        <div className="stats grid grid-cols-12 flex-1 w-10/12  ">
           <div className="flex flex-col  justify-start col-span-12   ">
             <div className="stat w-7/12  pt-2 pl-2 bg-kreativat-bar-background mb-2">
               <p className="font-bebas-neue text-[40px]">280</p>
@@ -69,7 +72,7 @@ const FAQSection: React.FC<FAQProps> = ({ faqs }) => {
       {faqs.map((faq, index) => (
         <div
           key={index}
-          className="mb-4 border-t-2 border-t-black w-full max-w-2xl font-unica-one"
+          className="mb-4 border-t-2 border-t-black  max-w-lg w-10/12 font-unica-one"
         >
           <button
             onClick={() => toggleActiveIndex(index)}
